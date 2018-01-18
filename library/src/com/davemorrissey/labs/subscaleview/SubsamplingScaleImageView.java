@@ -1995,6 +1995,7 @@ public class SubsamplingScaleImageView extends View {
             this.orientation = state.getOrientation();
             this.pendingScale = state.getScale();
             this.sPendingCenter = state.getCenter();
+            setRotationInternal(state.getRotation());
             invalidate();
         }
     }
