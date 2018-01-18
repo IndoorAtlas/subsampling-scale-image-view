@@ -6,7 +6,7 @@ version = '3.6.0'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         consumerProguardFiles 'proguard-rules.txt'
@@ -42,4 +42,4 @@ dependencies {
     compile 'com.android.support:support-annotations:25.3.0'
 }
 
-apply from: rootProject.file('release.gradle')
+apply from: parent.file('release.gradle')
